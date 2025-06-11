@@ -32,6 +32,7 @@
             lblusu = new Label();
             lblsenha = new Label();
             txtusu = new TextBox();
+            txtsenha = new TextBox();
             SuspendLayout();
             // 
             // lbllog
@@ -72,11 +73,20 @@
             txtusu.Size = new Size(100, 25);
             txtusu.TabIndex = 3;
             // 
+            // txtsenha
+            // 
+            txtsenha.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtsenha.Location = new Point(455, 225);
+            txtsenha.Name = "txtsenha";
+            txtsenha.Size = new Size(100, 25);
+            txtsenha.TabIndex = 4;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtsenha);
             Controls.Add(txtusu);
             Controls.Add(lblsenha);
             Controls.Add(lblusu);
@@ -93,5 +103,6 @@
         private Label lblusu;
         private Label lblsenha;
         private TextBox txtusu;
+        private TextBox txtsenha;
     }
 }
