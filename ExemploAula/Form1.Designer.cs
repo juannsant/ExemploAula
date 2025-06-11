@@ -30,6 +30,7 @@
         {
             lbllog = new Label();
             lblusu = new Label();
+            lblsenha = new Label();
             SuspendLayout();
             // 
             // lbllog
@@ -52,11 +53,22 @@
             lblusu.TabIndex = 1;
             lblusu.Text = "Usuário";
             // 
+            // lblsenha
+            // 
+            lblsenha.AutoSize = true;
+            lblsenha.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblsenha.Location = new Point(185, 216);
+            lblsenha.Name = "lblsenha";
+            lblsenha.Size = new Size(68, 28);
+            lblsenha.TabIndex = 2;
+            lblsenha.Text = "Senha";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblsenha);
             Controls.Add(lblusu);
             Controls.Add(lbllog);
             Name = "Form1";
@@ -69,5 +81,6 @@
 
         private Label lbllog;
         private Label lblusu;
+        private Label lblsenha;
     }
 }
