@@ -1,6 +1,6 @@
 ﻿namespace ExemploAula
 {
-    partial class Form1
+    partial class frmtellog
     {
         /// <summary>
         ///  Required designer variable.
@@ -79,6 +79,7 @@
             txtsenha.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtsenha.Location = new Point(373, 225);
             txtsenha.Name = "txtsenha";
+            txtsenha.PasswordChar = '*';
             txtsenha.Size = new Size(142, 25);
             txtsenha.TabIndex = 4;
             // 
@@ -91,8 +92,9 @@
             btnlogar.TabIndex = 5;
             btnlogar.Text = "Logar";
             btnlogar.UseVisualStyleBackColor = true;
+            btnlogar.Click += btnlogar_Click;
             // 
-            // Form1
+            // frmtellog
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -103,8 +105,8 @@
             Controls.Add(lblsenha);
             Controls.Add(lblusu);
             Controls.Add(lbllog);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "frmtellog";
+            Text = "Tela de Login";
             ResumeLayout(false);
             PerformLayout();
         }
